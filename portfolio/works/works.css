@@ -1,0 +1,153 @@
+/* STATS */
+
+#smalltext h3  {
+    margin: 0;
+    font-weight: 600;
+}
+
+#smalltext {
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-size: cover;
+}   
+#smalltext p {
+    margin: 0.5rem 1rem 0 0;
+    font-weight: 300;
+    line-height: 1rem;
+    font-size: 1rem;
+} 
+
+#bigtext p{
+    margin: 1rem 0 0;
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    max-width: 60ch;
+}
+#bigtext h2{
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+}
+#workstat hr{
+    margin: 3rem 0 1rem !important;
+}
+.borderleft{
+    display: none;
+}
+
+/* RESULTS */
+#results{
+    margin: 5rem 2rem 1.5rem;
+}
+#results img {
+    width:  100%;
+    height: auto;
+    border: solid 0.07rem #181f25;
+}
+.finalimg{
+    width: 100%;
+    height: auto;
+}
+
+/* FINAL LINKS */
+
+.finallinks{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 4rem;
+}
+
+.finallinks a{ 
+    border-bottom: solid 0.1rem #0e8ae900;
+    color: #181f25;
+    padding: 0.5rem 0 0;
+    transition: 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+.finallinks a:hover{
+    border-bottom: solid 0.1rem #0e8ae9;
+   transform: translateY(-0.25rem);
+}
+
+/* MEDIA QUERRIESSS */
+/*MEDIA QUETTYING*/
+@media only screen and (min-width: 768px){
+   #results{
+       margin: 5rem 4rem 1.5rem;
+   }
+   .finallinks{
+    margin: 0 4rem 1.5rem;
+   }
+   #workstat hr{
+    display: none;
+   }
+   #smalltext{
+    /* display: block; */
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* align-items: center; */
+    }
+
+   #workstat{
+    display: grid;
+    margin: 0 4rem;
+    grid-template-columns: 0.5fr 0.5fr 3fr;
+    justify-content: flex-start;
+   }
+   #workstat h3{
+    margin: 2rem 0 0.5rem ;
+   }
+   .borderleft{
+    display: block;
+    border-left: solid 0.1rem #F9FAFB;
+    ;
+    margin: 2rem 0 0 2rem;
+   }
+
+   #results div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   #results div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#results div img {
+    float: left;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+@media only screen and (min-width: 1024px){
+    #results{
+        margin: 5rem 8rem 3rem;
+    }
+    .finallinks{
+     margin: 0 8rem 3rem;
+    }
+    #workstat{
+        margin: 0 8rem !important;
+    }
+    header{
+        background: linear-gradient( rgba(0, 0, 0, 0)25%, #f9fafb76 100%), url(../img/works/SerenodyBanner.png) no-repeat center center;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #results{
+        margin: 5rem 12rem 3rem;
+    }
+    .finallinks{
+     margin: 0 12rem 3rem;
+    }
+    #workstat{
+        margin: 0 12rem !important;
+    }
+}
