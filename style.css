@@ -1,0 +1,383 @@
+/* COLOR
+rgb(24, 33, 40)
+rgb(255, 255, 255)
+#09c34a
+#dd3d3d */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+::selection{
+    background-color: #09c34a;
+    color: rgb(255, 255, 255);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    transition: 0.3s;
+    background-color: #F9FAFB;
+    color:rgb(24,33,40);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    background-color: #F9FAFB;
+    border-bottom: solid 0.08rem #bfc5c9;
+    align-items: center;
+    padding: 0 1rem;
+
+    font-family: Montserrat;
+}
+nav img{
+    height: 3rem;
+    width: auto;
+    margin: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #181f25;
+    padding: 0;
+    transition: 0.3s;
+}
+nav a:hover{
+border-bottom: #09c34a solid 0.15rem;  
+}
+
+
+/* HEADER */
+
+header, figure, #beginning, #inspiration, #denouement{
+    margin: 2.5rem 1rem;
+}
+footer{
+    padding: 2.5rem 1rem;
+}
+#middle{
+    margin: 2.5rem 1rem 0;
+}
+.imgdivider{
+    margin: 0 1rem 0;
+}
+h1{
+    font-family: 'Yatra One', cursive;
+    font-size: 2.25rem;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 2.25rem;
+}
+h2{
+    /* font-family: 'Yatra One', cursive; */
+    font-weight: 200;
+    font-size: 1.75rem;
+    margin: 0;
+    /* text-transform: lowercase; */
+    line-height: 1.75rem;
+}
+main img{
+    width: 100%;
+    height: auto;
+}
+#topbanner img{
+    /* margin: 0 0 2.5rem 0; */
+    border-radius: 0;
+}
+header p{
+    max-width: 65ch;
+}
+
+/* MAIN */
+main p, header p{
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+h3{
+    margin: 2rem 0 0;
+    font-family: 'Yatra One', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+#inspo{
+    font-size: 1.25rem;
+    text-transform: none;
+}
+#BigBangKamehameha{
+filter: brightness(90%);
+display: flex;
+margin: auto;
+}
+#middle img{
+    margin: auto 0;
+}
+.noradius{
+margin: 0 1rem;
+}
+.carousel-cell{
+    width: 100%;
+    height: auto;
+    background-color:rgb(22, 32, 41)    ;
+    margin: auto 0.5rem;
+    counter-increment: carousel-cell;
+}
+.carousel-cell:before{
+    /* content: counter(carousel-cell); */
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px; 
+    color: white;
+}
+#sleep{
+    background-color: rgb(22, 32, 41);
+    border-radius: 3rem;
+
+}
+.flickity-prev-next-button.previous, .flickity-prev-next-button.next{
+    background-color:#1FFF6D;
+}
+/* OVERLAY */
+
+.container{
+    position: relative;
+    margin: 1rem;
+}
+.container img{
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(0deg, rgba(24,33,40,1) 0%, rgba(24,33,40,0) 75%);
+    border-radius: 3rem;
+  }
+.container:hover .overlay {
+    opacity: 1;
+  }
+  #popup {
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Yatra One', cursive;
+    font-size: 2rem;
+    background-color: #00000042;
+    border: solid 0.3rem #1FFF6D;
+    padding: 0.75rem 1.5rem 0.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+    text-align: center; 
+  }
+  #popup:hover{
+    background-color:#dd3d3d;
+
+    border: solid 0.3rem #dd3d3d;
+    cursor: pointer;
+    padding: 1rem 1.75rem 0.75rem;
+
+  }
+
+/* FOOTER */
+
+footer{
+    background-color: #181f25;
+    color: #F9FAFB;
+    padding-bottom: 2rem;
+    padding: 5rem 2rem 3rem;
+
+}
+footer p{
+    color: #F9FAFB;
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+    transition: 0.3s;
+    text-decoration: none;
+    
+
+
+}
+footer h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #F9FAFB;
+
+    background-color: #0e8ae9;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+hr{
+    margin: 3rem 0;
+    border: solid 0.01rem #F9FAFB;
+}
+#footerinfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#footerinfo div{
+    display: flex;
+    align-self: center;
+    
+}
+footer svg{
+    width: 1.5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+#copyright {
+text-align: center;
+width: 100%;
+font-size: 1rem;
+font-weight: 300;
+}
+footer a p{ 
+    border-bottom: solid 0.1rem #0e8ae900;
+    padding: 0.5rem 0 0;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+footer a:hover P {
+    border-bottom: solid 0.1rem #0e8ae9;
+   transform: translateY(-0.25rem);
+}
+footer a{
+    text-decoration: none;
+
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px){
+    header, .container, .carousel, .imgdivider, figure, #beginning, #inspiration, #middle, #denouement{
+        margin: 4rem 2rem;
+    }
+    footer{
+        padding: 4rem 2rem;
+    }
+    .noradius {
+        margin: 2rem;
+    }
+    nav{
+        padding: 0 2rem;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+    }
+    .blogs p{
+        max-width: 60ch;
+    }
+    .imgdivider{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    /* h3{
+        margin: auto 0 auto 35%;
+    } */
+    #BigBangKamehameha{
+        width: 100%;
+    }
+    .imgdivider{
+        margin: 2rem 2rem 2rem;
+    }
+    .container{
+        margin: 0 2rem 5rem;
+        border-radius: 3rem;
+        border-bottom: solid 0.3rem  rgb(24,33,40);
+        transition: 0.3s;
+    }
+       #topbanner img:hover{
+        border-bottom: solid 0.3rem;
+    }
+        .container:hover{
+            border-bottom: solid 0.3rem #1FFF6D;
+        }
+        main img{
+            border-radius: 3rem;
+            border-bottom: solid 0.3rem  rgb(24,33,40);
+            transition: 0.3s;
+        }
+        main img:hover{
+            border-bottom: solid 0.3rem #1FFF6D;
+        }
+        .carousel-cell{
+            border-radius: 3rem;
+        }
+        .carousel-cell:before{
+            border-radius: 3rem;
+        }
+    }
+    
+@media only screen and (min-width: 1024px){
+    header, figure, #beginning, #inspiration, #middle, #denouement{
+        margin: 5rem 10rem 0;
+    }
+    footer{
+        padding: 5rem 10rem;
+    }
+    nav{
+        padding: 0 2rem;
+    }
+    #topbanner{
+        margin: 5rem 0;
+    }
+    .imgdivider, .noradius{
+        margin: 2rem 10rem 2rem;
+    }
+    .container{
+        margin: 0 10rem 5rem;
+    }
+    main p, .blogs p, header p{
+        font-weight: 400;
+    }
+}
+@media only screen and (min-width: 1600px){
+    header, figure, #beginning, #inspiration, #middle, #denouement{
+        margin: 5rem 12rem 0;
+    }
+    footer{
+        padding: 5rem 12rem 3rem;
+    }
+    nav{
+        padding: 0 2rem;
+    }
+    nav a{
+        /* padding: 0 1.5rem;  */
+    }
+    #topbanner{
+        margin: 5rem 0;
+    }
+    .imgdivider, .noradius{
+        margin: 2rem 12rem 2rem;
+    }
+    .container{
+        margin: 0 12rem 5rem;
+    }
+}
+
