@@ -1,0 +1,84 @@
+/*STICKY*/
+.menuleft{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 1.25rem 0 1.25rem;
+    text-decoration: none;
+
+    background-color: #fbc318;
+}
+#nav2{
+    background-color: #130e01;
+    transition: 0.3s;
+    /* position: absolute;
+    width: 100%; */
+}
+#nav2 a{
+    color: white;
+}
+
+#nav2:not(.sticky) {
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+        /* padding-bottom: 10rem; */
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#nav2.stick #nav3{
+    display: block;
+}
+
+
+/*MENU*/
+.menu{
+    transition: 0.3s;
+        border-radius: 2.5rem;
+        padding: 4rem 0 2rem;
+}
+.menu h3{
+    font-size: 2rem;
+    color: #130e01;
+    font-family: "sirenia", sans-serif;
+    font-weight: 500;
+    margin: 0 0 1rem;
+
+
+}
+
+/*GRID*/
+.dish{
+display: grid;
+grid-template-columns:max-content auto max-content;
+border-bottom: #fbc318 solid 0.1rem;
+margin: 0 1rem;
+}
+.dishNumber{
+    font-weight: 300;
+}
+.dish p{
+margin: 0.5rem 0 0.15rem 0;
+font-size: 1.4rem;
+color: #130e01;
+}
+.dishName{
+padding-left: 0.5rem;
+}
+.dishPrice{
+    font-weight: 300;
+}
+
+/* MEDIA QUERRIESS */
+@media only screen and (min-width: 768px){
+    .dish{
+        margin: 0 4rem;
+    }
+}
