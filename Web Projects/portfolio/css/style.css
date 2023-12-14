@@ -43,15 +43,20 @@ nav {
     
 }
 nav a{
-    padding: 1.2rem 0.75rem;
+    display: block;
+    margin: 1.2rem 0.75rem;
+    padding: 0.15rem 0;
     text-decoration: none;
     color: #181f25;
-    transition: 0.3s;
+    border-bottom: solid 0.1rem #181f2500;
+    transition: 0.2s;
 
 }
 nav a:hover{
-    color: #F9FAFB;
-    background-color: #0e8ae9;
+    border-bottom: solid 0.1rem  #0e8ae9;
+    color: #0e8ae9;
+    transform: translateY(-0.15rem);
+
 }
 nav img{
     height: 3rem;
@@ -64,7 +69,7 @@ nav img{
 
 header {
     background-color:#F9FAFB;
-    height: 65svh;
+    height: 50svh;
     position: relative;
 
     animation-name: upfade;
@@ -74,6 +79,7 @@ header {
     animation-timing-function: ease-out;
 }
 h1{ 
+    opacity: 0;
     font-weight: 800;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -82,18 +88,18 @@ h1{
     top: 0.25rem;
     line-height: 2rem;
     display: flex;
-    margin: 0 auto;
+    margin: 0 0 0 2rem;
     flex-wrap: wrap;
     align-items: flex-end;
-    text-align: center;
-    height: 65svh;
+    height: 50svh;
 
 
     animation-name: up;
-    animation-duration: 1.25s;
+    animation-duration: 0.75s;
+    animation-delay: 1.25s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
 }
 
 /*ABOUT ME*/
@@ -102,7 +108,7 @@ h1{
     padding: 5rem 0 6rem;
 
     animation-name: upfade;
-    animation-duration: 1s;
+    animation-duration: 1.15s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
@@ -163,7 +169,7 @@ h1{
 #bigbox h5{
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0.5rem 0 0;
+    margin: 1rem 0 0;
     line-height: 1.65rem;
 
     background-color: #181f25;
@@ -198,7 +204,7 @@ h1{
 
     /* border: 3px solid #F9FAFB;
     background-color:#F9FAFB; */
-    grid-gap: 3px;
+    grid-gap: 0.2rem 0.4rem;
     margin: 4rem 0;
     overflow: hidden;
     
@@ -214,7 +220,7 @@ h1{
     position: relative;
     background: linear-gradient(90deg, rgba(24,31,37,0.75) 0%, rgba(24,31,37,0.15) 50%);
     transition: 0.35s;
-    border-bottom: #181f25 solid 0.25rem;
+    border-bottom: #F9FAFB solid 0.2rem;
     transform-origin: bottom;
 
  }
@@ -240,7 +246,7 @@ h1{
 }
 .container:hover{
     background: linear-gradient(90deg, rgba(24,31,37,1) 0%, rgba(249,250,251,0) 0%);
-    border-bottom: #0e8ae9 solid 0.25rem;
+    border-bottom: #0e8ae9 solid 0.2rem;
 
 }
 .info{
@@ -379,8 +385,11 @@ footer a{
     header{
         height: 73svh;
     }
-    #aboutme, h1{
+    #aboutme{
         margin: 0 8rem;
+    }
+    h1{
+        margin: 0 12rem;
     }
     #works, footer{
         padding: 5rem 8rem 3rem;
@@ -424,8 +433,8 @@ footer a{
   }
 @keyframes up {
     0% {
-      transform: translateY(5svh);
-      opacity: 1;
+      transform: translateY(12svh);
+      opacity: 0;
     }
   
     100% {

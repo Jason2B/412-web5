@@ -21,10 +21,10 @@ header{
 
 #bigtext p{
     margin: 1rem 0 0;
-    font-size: 1.15rem;
-    line-height: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     font-weight: 300;
-    max-width: 60ch;
+    max-width: 55ch;
 }
 #bigtext h2{
     margin: 2rem 0 1rem;
