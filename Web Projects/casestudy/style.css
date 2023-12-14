@@ -43,10 +43,14 @@ nav a {
     text-decoration: none;
     color: #181f25;
     padding: 0;
-    transition: 0.3s;
+    transition: 0.2s;
+    border-bottom: solid 0.1rem #181f2500;
+
 }
 nav a:hover{
-border-bottom: #09c34a solid 0.15rem;  
+border-bottom: #09c34a solid 0.1rem;  
+color: #09c34a;
+transform: translateY(-0.15rem);
 }
 
 
@@ -313,14 +317,14 @@ footer a{
         transition: 0.3s;
     }
        #topbanner img:hover{
-        border-bottom: solid 0.3rem;
+        border-bottom: solid 0.3rem #F9FAFB;
     }
         .container:hover{
             border-bottom: solid 0.3rem #1FFF6D;
         }
         main img{
             border-radius: 3rem;
-            border-bottom: solid 0.3rem  rgb(24,33,40);
+            border-bottom: solid 0.3rem #f9fafb00;
             transition: 0.3s;
         }
         main img:hover{
@@ -366,9 +370,6 @@ footer a{
     }
     nav{
         padding: 0 2rem;
-    }
-    nav a{
-        /* padding: 0 1.5rem;  */
     }
     #topbanner{
         margin: 5rem 0;
