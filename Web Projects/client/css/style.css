@@ -23,6 +23,20 @@ html {
     font-family: "effra", sans-serif;
     scroll-behavior: smooth;
 }
+
+nav img{
+    margin: 0.2rem 0.75rem 0;
+    display: block;
+    transition: 0.25s ease-out;
+    width: auto;
+    height: 100%;
+}
+
+nav img:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
 nav, #nav2 {
     display: flex;
     justify-content: space-between;
@@ -66,7 +80,14 @@ nav {
     color: #130e01;
 }
 
-
+nav a{
+    display: block;
+    transition: 0.3s;
+}
+nav a:hover{
+    color:#fdfcf6;
+    transform: translateY(-0.15rem);
+}
 /*HEADER*/
 
 header {
@@ -81,6 +102,15 @@ header {
     flex-wrap: wrap;
 
 }
+header div{
+    margin-bottom: 2rem;
+
+    animation-name: menuswish;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
 header h1{ 
     font-family: "sirenia", sans-serif;
     font-weight: 600;
@@ -94,7 +124,7 @@ header h1{
 }
 
 header a{
-    color: #fdfcf6;
+    color: #130e01;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -115,7 +145,7 @@ header a{
 header a:hover{
     background-color: #fbc318;
     padding: 0.75em 1.5rem;
-    color: #130e01;
+    color: #fdfcf6;
 }
 
 /*ABOUT ME*/
@@ -137,11 +167,12 @@ justify-self: center;
 width: fit-content;
 }
 #about h2{
-    background-color: #fbc318;
+    background-color: #2b2208;
+    color:  #fdfcf6;
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    transform: rotate(-2deg);
+    transform: rotate(-3deg);
 }
 #about p{
     font-size: 1.4em;
@@ -162,7 +193,9 @@ width: fit-content;
     transform: translateX(0.25em);
 
 }
-
+.borderleft{
+    display: none;
+}
 /*MENU*/
 
 .difh1{
@@ -214,6 +247,7 @@ footer h1{
 }
 footer a{
     margin: 0 0.25rem;
+    width: max-content ;
     font-size: 1.25rem;
     text-decoration: none;
     color: #fbc318;
@@ -252,12 +286,12 @@ margin: 2rem 2.5rem 1rem;
 /*ANIMATIONS*/
 @keyframes menuswish {
     0% {
-      transform: translateX(20vw);
+      transform: translateY(10vh);
       opacity: 0;
     }
   
     100% {
-  transform: translateX(0vw);
+  transform: translateY(0vh);
   opacity: 1;
     }
   }
@@ -282,5 +316,38 @@ margin: 2rem 2.5rem 1rem;
         margin: 0.25rem 2rem;
     }
     footer h2{
-margin: 2rem 0 1rem;    }
+    margin: 2rem 0 1rem;    }
+    }
+
+    /* 2 COLUMNS FOR WEBSITE */
+
+@media only screen and (min-width: 1024px){
+    header h1{
+    font-size: 6rem;
+    }
+    header a{
+        font-size: 1.5rem;
+    }
+    #about{
+        margin: 0 2rem;
+    }
+    #gridmenu{
+        margin: 0 3rem 0 3rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 0.4fr 0.1fr 1fr;
+        margin: 4rem 6rem 0;
+    }
+    #nav2{
+        display: none;
+    }
+    .borderleft{
+        display: block;
+        border-left: solid 0.1rem  #fbc318;
+        margin: 2rem 0 0 50%;
+    }
+    #about p{
+        font-size: 1.15rem;
+    }
 }
